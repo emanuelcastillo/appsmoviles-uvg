@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item android:title="Principal">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/Booklibrary"
+                        android:title="Libros"
+                        android:icon="@drawable/ic_open_book"/>
+                    <item
+                        android:id="@+id/BookUpload"
+                        android:title="Aportes"
+                        android:icon="@drawable/ic_uploadbook"/>
+                    <item
+                        android:id="@+id/BookFav"
+                        android:title="Favoritos"
+                        android:icon="@drawable/ic_book_with_bookmark"/>
+                </group>
+            </menu>
+        </item>
+
+        <item android:title="Utilidades">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/Profile"
+                        android:title="Perfil"
+                        android:icon="@drawable/ic_profile"
+                        />
+                    <item
+                        android:id="@+id/Settings"
+                        android:title="Ajustes"
+                        android:icon="@drawable/ic_settings"/>
+                    <item
+                        android:id="@+id/Error"
+                        android:title="Informe de error"
+                        android:icon="@drawable/ic_error"/>
+                    <item
+                        android:id="@+id/LogOut"
+                        android:title="Cerrar Sesión"
+                        android:icon="@drawable/ic_logout"
+                        />
+                </group>
+            </menu>
+        </item>
+
+        <item android:title="Sobre BooksideUVG">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/InfoBookside"
+                        android:title="Info BooksideUVG"
+                        android:icon="@drawable/ic_info"/>
+                    <item
+                        android:id="@+id/Help"
+                        android:title="Ayuda"
+                        android:icon="@drawable/ic_help"/>
+                </group>
+            </menu>
+        </item>
+
+</menu>
