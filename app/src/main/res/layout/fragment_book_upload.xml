@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblAportes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aportes de la comunidad"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.061"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.014" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="520dp"
+            android:orientation="vertical">
+                <ListView
+                    android:id="@+id/listuploadbooks"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.415" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnSubirPdf"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Cargar archivo"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"
+                    app:backgroundTint="@color/uvg_backgraund_1"
+                    app:icon="@drawable/ic_uploadbook"
+                    app:iconSize="24dp"
+                    app:iconTint="@color/white" />
+
+                <Button
+                    android:id="@+id/btnRecargar"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Actualizar pagina"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"
+                    app:backgroundTint="@color/uvg_backgraund_1"
+                    app:icon="@drawable/ic_loop"
+                    app:iconSize="24dp"
+                    app:iconTint="@color/white" />
+        </LinearLayout>
+</LinearLayout>
